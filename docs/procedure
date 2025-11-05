@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Procedure</title>
+</head>
+<body>
+  <h1 style="text-align:center;">Procedure</h1>
+  <p style="text-align:center;">Test</p>
+
+  <p style="text-align:center; margin-top:30px;">
+    <a href="index.html" style="color:#006064; text-decoration:none;">Back to Home</a>
+  </p>
+
+  <hr style="max-width:600px; margin:30px auto;">
+
+  <p style="text-align:center; margin-top:10px;">
+    <!-- Link zur Privacy Policy PDF: passe den Pfad/Dateinamen an, falls nötig -->
+    <a href="privacy-policy.pdf" target="_blank" rel="noopener noreferrer" style="color:#006064; font-size:16px; text-decoration:none;">
+      Privacy Policy (PDF)
+    </a>
+  </p>
+</body>
+</html>
