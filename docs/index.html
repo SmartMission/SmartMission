@@ -4,6 +4,14 @@
   <meta charset="utf-8">
   <title>DueScope – Welcome</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    /* Wiederverwendbarer Spacer: ca. 1cm (auf Bildschirmen kann physische Größe leicht variieren) */
+    .spacer-1cm { display:inline-block; width:1cm; }
+    @media (max-width:480px) { .spacer-1cm { width:0.6cm; } }
+
+    .footer-link { color:#006064; font-size:16px; text-decoration:none; }
+    .footer-copy { font-size:14px; color:inherit; }
+  </style>
 </head>
 <body>
   <h1 style="text-align:center;">Welcome to</h1>
@@ -22,13 +30,17 @@
   <p style="text-align:center;">&nbsp;</p>
 
   <p style="text-align:center;">
-    <span style="color:#455a64;font-size:18px;">The app makes it easier for you to manage your receivables and payables. You can sort invoices you have created by due date, just as you can analyze your payment obligations.</span>
+    <span style="color:#455a64;font-size:18px;">
+      The app makes it easier for you to manage your receivables and payables. You can sort invoices you have created by due date, just as you can analyze your payment obligations.
+    </span>
   </p>
 
   <p style="text-align:center;">&nbsp;</p>
 
   <p style="text-align:center;">
-    <span style="color:#455a64;font-size:18px;">It is possible to divide the payment terms into variably definable time intervals in order to see when which amounts are due for payment.</span>
+    <span style="color:#455a64;font-size:18px;">
+      It is possible to divide the payment terms into variably definable time intervals in order to see when which amounts are due for payment.
+    </span>
   </p>
 
   <p style="text-align:center;">&nbsp;</p>
@@ -40,7 +52,9 @@
   <p style="text-align:center;">&nbsp;&nbsp;</p>
 
   <p style="text-align:center;">
-    <span style="color:#455a64;font-size:18px;">The analysis is based on your CSV file containing payers (your debtors) or payees (your creditors), invoice amounts, and due dates. This file is imported and automatically evaluated.</span>
+    <span style="color:#455a64;font-size:18px;">
+      The analysis is based on your CSV file containing payers (your debtors) or payees (your creditors), invoice amounts, and due dates. This file is imported and automatically evaluated.
+    </span>
   </p>
 
   <p style="text-align:center;">&nbsp;</p>
@@ -57,26 +71,40 @@
 
   <p style="text-align:center;">&nbsp;</p>
 
+  <!-- Korrigierter Link: öffnet procedure.html im selben Tab -->
   <p style="text-align:center;">
-    <span style="color:#006064;"><strong><u>Procedures:</u></strong></span>
+    <a href="procedure.html" aria-label="Open Procedures page" style="color:#006064;font-size:16px;text-decoration:none;">
+      <u>Learn more about the functionalities of the app</u>
+    </a>
   </p>
 
-  <ol>
-    <li class="ck-list-marker-color" style="--ck-content-list-marker-color:#006064;">
-      <p><span style="color:#006064;">Define whether you want to evaluate your outstanding receivables or payables.</span></p>
-    </li>
-    <li class="ck-list-marker-color" style="--ck-content-list-marker-color:#006064;">
-      <p><span style="color:#006064;">Flexibly specify which number format (e.g., thousand or decimal separator), which date format, and which separator your CSV file uses. This makes you independent of the export format of your accounting program.</span></p>
-    </li>
-    <li class="ck-list-marker-color" style="--ck-content-list-marker-color:#006064;">
-      <p><span style="color:#006064;">Would you like to know which invoices have been due for 30, 60, or 90 days? Decide for yourself which time intervals you want to view. The individual sections can be freely selected.</span></p>
-    </li>
-    <li class="ck-list-marker-color" style="--ck-content-list-marker-color:#006064;">
-      <p><span style="color:#006064;">Then simply upload a list of outstanding receivables or payables to the app, specifying the payer or payee, the respective invoice amount, and the due date. Alternatively, you can generate sample data to test the app's functionalities.</span></p>
-    </li>
-    <li class="ck-list-marker-color" style="--ck-content-list-marker-color:#006064;">
-      <p><span style="color:#006064;">Now view the invoice amounts aggregated per debtor or creditor, which have been automatically assigned to the due date intervals you defined. Check your individual due date structure in various chart types. Who is your largest debtor or creditor? Graphical evaluations of concentrations facilitate analysis.</span></p>
-    </li>
-    <li class="ck-list-marker-color" style="--ck-content-list-marker-color:#006064;">
-      <p><span style="color:#006064;">Export the due date structure table to further process the information in other applications.</span></p>
+  <p style="text-align:center;">&nbsp;</p>
 
+  <p style="text-align:center;">
+    Available in the <a target="_blank" rel="noopener noreferrer" href="https://apps.apple.com/de/app/DueScope/id6754844964">App Store</a> for iOS.
+  </p>
+
+  <p style="text-align:center;">
+    <a target="_blank" rel="noopener noreferrer" href="https://apps.apple.com/de/app/DueScope/id6754844964">
+      <img src="https://linkmaker.itunes.apple.com/assets/shared/badges/de/appstore-lrg.svg" alt="App Store Badge">
+    </a>
+  </p>
+
+  <hr>
+
+  <p style="margin-top:20px;text-align:center;">
+    <span class="footer-copy">© 2025 </span>
+    <a class="email footer-copy" href="mailto:smartmission@web.de">smartmission@web.de</a>
+
+    <!-- 1cm Abstand -->
+    <span class="spacer-1cm" aria-hidden="true"></span>
+
+    <a class="footer-link" href="privatePolicy.html" aria-label="Private Policy">Private Policy</a>
+
+    <!-- 1cm Abstand -->
+    <span class="spacer-1cm" aria-hidden="true"></span>
+
+    <a class="footer-link" href="impressum.html" aria-label="Impressum">Impressum</a>
+  </p>
+</body>
+</html>
