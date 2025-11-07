@@ -11,9 +11,44 @@
 
     .footer-link { color:#006064; font-size:16px; text-decoration:none; }
     .footer-copy { font-size:14px; color:inherit; }
+
+    /* Flaggen-Button oben rechts */
+    .flag-link {
+      position: fixed;        /* bleibt beim Scrollen oben rechts */
+      top: 12px;
+      right: 12px;
+      z-index: 1000;
+      display: inline-block;
+      line-height: 0;
+      text-decoration: none;
+    }
+    .flag-icon {
+      width: 40px;            /* Größe anpassen */
+      height: auto;
+      display: block;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+      transition: transform 0.12s ease;
+    }
+    .flag-link:hover .flag-icon,
+    .flag-link:focus .flag-icon {
+      transform: translateY(-2px);
+      outline: none;
+    }
+    /* sichtbarer Fokus für Tastaturbenutzer */
+    .flag-link:focus {
+      box-shadow: 0 0 0 3px rgba(0,96,100,0.18);
+      border-radius: 4px;
+    }
   </style>
 </head>
 <body>
+  <!-- Flaggen-Button: öffnet naechste.html.
+       Hinweis: Wenn du die Seite in einem neuen Tab öffnen willst, füge target="_blank" rel="noopener noreferrer" zum <a>-Tag hinzu. -->
+  <a class="flag-link" href="naechste.html" aria-label="Öffne nächste Seite">
+    <img class="flag-icon" src="images/Flags/DE.svg" alt="Deutsch">
+  </a>
+
   <h1 style="text-align:center;">Welcome to</h1>
   <p>&nbsp;</p>
 
