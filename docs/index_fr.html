@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="utf-8">
   <title>DueScope – Welcome</title>
@@ -10,31 +10,49 @@
 
     .footer-link { color:#006064; font-size:16px; text-decoration:none; }
     .footer-copy { font-size:14px; color:inherit; }
-    .flag-link {
+
+    .flag-group {
       position: fixed;
       top: 12px;
       right: 12px;
       z-index: 1000;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .flag-link {
       display: inline-block;
       line-height: 0;
       text-decoration: none;
+      border-radius: 4px;
+      padding: 3px;
+      background: rgba(255,255,255,0.8);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
     }
+
     .flag-icon {
-      width: 40px; 
+      width: 40px;
       height: auto;
       display: block;
-      border-radius: 4px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-      transition: transform 0.12s ease;
     }
-    .flag-link:hover .flag-icon,
-    .flag-link:focus .flag-icon {
+
+    .flag-link:hover,
+    .flag-link:focus {
       transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
       outline: none;
     }
+
     .flag-link:focus {
       box-shadow: 0 0 0 3px rgba(0,96,100,0.18);
-      border-radius: 4px;
+      border-radius: 6px;
+    }
+
+    @media (max-width:420px) {
+      .flag-icon { width: 30px; }
+      .flag-group { top: 8px; right: 8px; gap: 6px; }
     }
   </style>
 </head>
