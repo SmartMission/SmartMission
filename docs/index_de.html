@@ -5,49 +5,66 @@
   <title>DueScope – Welcome</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
-    /* Wiederverwendbarer Spacer: ca. 1cm (auf Bildschirmen kann physische Größe leicht variieren) */
     .spacer-1cm { display:inline-block; width:1cm; }
     @media (max-width:480px) { .spacer-1cm { width:0.6cm; } }
 
     .footer-link { color:#006064; font-size:16px; text-decoration:none; }
     .footer-copy { font-size:14px; color:inherit; }
 
-    /* Flaggen-Button oben rechts */
-    .flag-link {
-      position: fixed;        /* bleibt beim Scrollen oben rechts */
+    .flag-group {
+      position: fixed;
       top: 12px;
       right: 12px;
       z-index: 1000;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .flag-link {
       display: inline-block;
       line-height: 0;
       text-decoration: none;
+      border-radius: 4px;
+      padding: 3px;
+      background: rgba(255,255,255,0.8);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
     }
+
     .flag-icon {
-      width: 40px;            /* Größe anpassen */
+      width: 40px;
       height: auto;
       display: block;
-      border-radius: 4px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-      transition: transform 0.12s ease;
     }
-    .flag-link:hover .flag-icon,
-    .flag-link:focus .flag-icon {
+
+    .flag-link:hover,
+    .flag-link:focus {
       transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
       outline: none;
     }
-    /* sichtbarer Fokus für Tastaturbenutzer */
+
     .flag-link:focus {
       box-shadow: 0 0 0 3px rgba(0,96,100,0.18);
-      border-radius: 4px;
+      border-radius: 6px;
+    }
+
+    @media (max-width:420px) {
+      .flag-icon { width: 30px; }
+      .flag-group { top: 8px; right: 8px; gap: 6px; }
     }
   </style>
 </head>
 <body>
-  <!-- Flaggen-Button: öffnet naechste.html.
-       Hinweis: Wenn du die Seite in einem neuen Tab öffnen willst, füge target="_blank" rel="noopener noreferrer" zum <a>-Tag hinzu. -->
-  <a class="flag-link" href="index_de.html" aria-label="Öffne nächste Seite">
-    <img class="flag-icon" src="images/Flags/DE.svg" alt="Deutsch">
-  </a>
+  <div class="flag-group" role="navigation" aria-label="Language / country links">
+    <a class="flag-link" href="index_gb.html" aria-label="English (GB)">
+      <img class="flag-icon" src="images/Flags/GB.svg" alt="English">
+    </a>
+    <a class="flag-link" href="index_fr.html" aria-label="Français (FR)">
+      <img class="flag-icon" src="images/Flags/FR.svg" alt="Français">
+    </a>
+  </div>
 
   <h1 style="text-align:center;">Welcome to</h1>
   <p>&nbsp;</p>
