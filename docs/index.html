@@ -5,21 +5,18 @@
   <title>DueScope – Welcome</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
-    /* Wiederverwendbarer Spacer: ca. 1cm (auf Bildschirmen kann physische Größe leicht variieren) */
-    .spacer-1cm { display:inline-block; width:1cm; }
+   .spacer-1cm { display:inline-block; width:1cm; }
     @media (max-width:480px) { .spacer-1cm { width:0.6cm; } }
 
     .footer-link { color:#006064; font-size:16px; text-decoration:none; }
     .footer-copy { font-size:14px; color:inherit; }
-
-    /* Flaggen-Buttons oben rechts (Gruppe) */
     .flag-group {
-      position: fixed;       /* bleibt beim Scrollen oben rechts */
+      position: fixed;
       top: 12px;
       right: 12px;
       z-index: 1000;
       display: flex;
-      gap: 8px;              /* Abstand zwischen den Flags */
+      gap: 8px;
       align-items: center;
     }
 
@@ -35,7 +32,7 @@
     }
 
     .flag-icon {
-      width: 40px;           /* Größe anpassen */
+      width: 40px;
       height: auto;
       display: block;
     }
@@ -46,8 +43,6 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.12);
       outline: none;
     }
-
-    /* Sichtbarer Fokus für Tastaturbenutzer */
     .flag-link:focus {
       box-shadow: 0 0 0 3px rgba(0,96,100,0.18);
       border-radius: 6px;
@@ -60,7 +55,6 @@
   </style>
 </head>
 <body>
-  <!-- Flaggen-Gruppe: DE -> index_de.html, FR -> index_fr.html -->
   <div class="flag-group" role="navigation" aria-label="Language / country links">
     <a class="flag-link" href="index_de.html" aria-label="Deutsch (DE)">
       <img class="flag-icon" src="images/Flags/DE.svg" alt="Deutsch">
@@ -152,12 +146,10 @@
     <span class="footer-copy">© 2025 </span>
     <a class="email footer-copy" href="mailto:smartmission@web.de">smartmission@web.de</a>
 
-    <!-- 1cm Abstand -->
-    <span class="spacer-1cm" aria-hidden="true"></span>
+   <span class="spacer-1cm" aria-hidden="true"></span>
 
     <a class="footer-link" href="policies/privatepolicy.html" aria-label="Private Policy">Private Policy</a>
 
-    <!-- 1cm Abstand -->
     <span class="spacer-1cm" aria-hidden="true"></span>
 
     <a class="footer-link" href="impressum.html" aria-label="Impressum">Impressum</a>
